@@ -24,16 +24,23 @@ A, B, C, D = 1, 0, 1, 1
 for i in range(0, 3):
     t = A + f(B,C,D) + M[i] + y[i]
     A, B, C, D = D, ~t, B, C
-    print(A, B, C, D)
+    print("A, B, C, D = ", A, B, C, D)
+    print("t = ", t)
+    print()
 
 for i in range(3, 6):
     t = A + g(B,C,D) + M[i] + y[i]
     A, B, C, D = D, ~t, B, C
-    print(A, B, C, D)
+    print("A, B, C, D = ", A, B, C, D)
+    print("t = ", t)
+    print()
 
 for i in range(6, 9):
     t = A + h(B,C,D) + M[i] + y[i]
-    A, B, C, D = D, t, B, C
-    print(A, B, C, D)
+    A, B, C, D = D, ~t, B, C
+    print("A, B, C, D = ", A, B, C, D)
+    print("t = ", t)
+    print()
 
-print(t)
+
+print("t = ", t)
